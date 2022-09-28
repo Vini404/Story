@@ -36,7 +36,9 @@ List<Story> _storyData = [
 ];
 
 String getStory(){
-  return _storyData[_storyNumber].storyTitle;
+  var teste =  _storyData[_storyNumber].storyTitle;
+  print(teste);
+  return teste;
 }
 
 String getChoice1(){
@@ -61,20 +63,22 @@ void nextStory(int option){
     if(option == 2) _storyNumber = 1;
    }
 
-  if(this._storyNumber == 1){
+  else if(this._storyNumber == 1){
     if(option == 1) _storyNumber = 2;
     if(option == 2) _storyNumber = 3;
   }
 
-  if(_storyNumber == 2){
+  else if(_storyNumber == 2){
     if(option == 1) _storyNumber = 5;
     if(option == 2) _storyNumber = 4;
   }
 
-  if(_storyNumber == 3 || _storyNumber == 4 || _storyNumber == 5)
+  else if(_storyNumber == 3 || _storyNumber == 4 || _storyNumber == 5)
     {
       Restart();
     }
+
+    print(_storyNumber);
 }
 
 }

@@ -96,26 +96,6 @@ class _StoryPageState extends State<StoryPage> {
                   ),
                 ),
               ),
-              Expanded(
-                flex: 2,
-                child: Visibility(
-                  child: TextButton(
-                    onPressed: () {
-                      storyBrain.Restart();
-                    },
-                    style: TextButton.styleFrom(
-                      backgroundColor: Colors.blue,
-                    ),
-                    child: Text(
-                      "Reinicio",
-                      style: TextStyle(
-                        fontSize: 20.0,
-                        color: Colors.white,
-                      ),
-                    ),
-                  ),
-                ),
-              )
             ],
           ),
         ),
